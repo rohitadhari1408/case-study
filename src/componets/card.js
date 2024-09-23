@@ -54,11 +54,14 @@ export default function MediaCard() {
     []
   );
 
-  // Show location on the map
-  const handleShowLocation = useCallback((coordinate) => {
-    setCoordinates(parseCoordinates(coordinate));
-    setOpenMap(true);
-  }, []);
+ // Show location on the map
+const handleShowLocation = useCallback((coordinate) => {
+  const { lat, lng } = parseCoordinates(coordinate);
+     //setOpenMap(true);
+  const url = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+  window.open(url, '_blank', 'noopener,noreferrer');
+}, []);
+
 
   // Close the map dialog
   const handleCloseMap = useCallback(() => {
