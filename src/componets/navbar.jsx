@@ -130,15 +130,7 @@ export default function NavBar() {
     <Box sx={{ flexGrow: 1, }}>
       <AppBar position="sticky" width="100vw" color="white">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            
-          </IconButton>
+         
           <Typography
             variant="h6"
             noWrap
@@ -195,3 +187,5 @@ export default function NavBar() {
     </Box>
   );
 }
+ 
+

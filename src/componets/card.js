@@ -74,8 +74,11 @@ const handleShowLocation = useCallback((coordinate) => {
         <Grid item key={singleCase.id} xs={12} sm={6} md={4}>
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
-              sx={{ height: 140 }}
-              image={singleCase.picture || "https://via.placeholder.com/100"}
+              sx={{  height: 200, // Adjust this value based on your layout needs
+                width: '100%', // Ensure the image takes the full width of the card
+                objectFit: 'contain', // Ensures the entire image fits within the container
+                backgroundColor: '#f0f0f0', } }
+              image={singleCase.picture || "https://via.placeholder.com/300?text=No+Image"}
               title={singleCase.name}
             />
             <CardContent>

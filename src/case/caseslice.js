@@ -2,8 +2,8 @@ import { createSlice, nanoid } from '@reduxjs/toolkit';
 
 const initialState = {
     cases: [
-        { id: 1, name: 'John Doe', mobileno: '1234567890', picture: 'http://dummyimage.com/217x100.png/5fa2dd/ffffff', designation: 'Manager', cordinate: '19.075983, 72.877655' },
-        { id: 2, name: 'Jane Smith', mobileno: '0987654321', picture: 'http://dummyimage.com/149x100.png/cc0000/ffffff', designation: 'Software Dev', cordinate: '18.520430, 73.856743' },
+        { id: 1, name: 'Rohit Adhari', mobileno: '9356446607', picture: 'https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', designation: 'Manager', cordinate: '19.075983, 72.877655' },
+        { id: 2, name: 'Dinesh Adhav', mobileno: '9420506896', picture: 'https://images.pexels.com/photos/16771673/pexels-photo-16771673/free-photo-of-itay-verchik-with-suite-smiles.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', designation: 'Software Dev', cordinate: '18.520430, 73.856743' },
     ],
 };
 
